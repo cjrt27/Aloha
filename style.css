@@ -1,0 +1,400 @@
+
+/* structures the font  */
+body{
+	font-size: 16px;
+	font-family: "Raleway";
+	font-weight: 300;
+    font-style: normal;
+	text-align: center;
+	margin: 0,0;
+	color: #2d2d2d;
+	} 
+
+	/* sets max width for certain sections  */	
+.container{
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.containerheader{
+	max-width: 1240px;
+	width: 100%;
+	height: 90px;
+	margin: 0 auto;
+	display:flex;
+	align-items: center;
+	position:relative;
+	}
+
+
+
+#logo {	display: flex; 
+	flex-basis: 25%;
+	align-items:flex-start;	
+	}
+
+#logo img {height: auto; 
+	width: 1%;
+	min-width:200px;}
+	
+	
+#navbar {display: flex;
+	flex-basis: 50%;
+	flex-direction: column;
+	
+	}
+
+#navbar a {color: #e2574c;
+	text-decoration: none;
+}
+
+#navbar ul {color: #e2574c;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	}
+
+	
+#shopping {	height: 40%;
+	width: 40%;
+	background-image: url("images/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain, auto;
+	display: flex;
+	flex-basis: 25%;
+	align-items: flex-end ;
+	flex-direction: column;
+	}
+
+/* font settings for headers */
+h1, h2, h3{font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: normal;;
+}
+
+h1, h2{color:#FFFFFF;}
+
+/* sets different colour (orange) for a couple sections */
+.difcolor{ color: #969696;}
+
+/* sets different colour (grey) for a most loved section */
+#mostloved{color:#e2574c;}
+
+
+/* Structures images for hero */
+
+.hero {
+	height: 400px;
+	width: 100%;
+	background-image: url("images/banner-girl.png"),url("images/flower-bkgd.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain, auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	
+}
+
+/* Structures images mid section mens glasses etc*/
+
+#midsectiontop {display: flex;
+	width: 100%;
+	height: 200px;
+	flex-direction: row;
+	margin: 5px;}
+	
+#midsectiontop ul {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 200px;
+	margin: 5px;}
+
+	
+	
+#midsectionbottom {display: flex;
+	width: 100%;
+	height: 200px;
+	flex-direction: row;
+	margin: 5px;}
+
+
+#midsectionbottom ul {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 200px;
+	margin: 5px;}
+
+	
+#mens{flex-basis: 50%;
+	height: 100%;
+	width: 100%;
+	background-image: url("images/mens-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	margin: 5px;}
+
+#trends{
+	flex-basis: 25%;
+	height: 100%;
+	width: 100%;
+	background-image: url("images/trends-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	margin: 5px;}
+	
+#glasses{flex-basis: 25%;
+	height: 100%;
+	width: 100%;
+	background-image: url("images/glasses-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	margin: 5px;}
+	
+#sale{flex-basis: 25%;
+	height: 100%;
+	width: 100%;
+	background-image: url("images/sale-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	margin: 5px;}
+	
+#bags{flex-basis: 25%;
+	height: 100%;
+	width: 100%;
+	background-image: url("images/bags-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	margin: 5px;}
+	
+#womens{flex-basis: 50%;
+	height: 100%;
+	width: 100%;
+	background-image: url("images/womens-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	margin: 5px;}
+	
+
+	
+
+/* Structures images for bottom secion Wave img */
+
+.bottom {
+	height: 400px;
+	width: 100%;
+	background-image: url("images/wave-bkgd.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	
+}
+
+#emailinput{
+	border-radius: 10px;
+	width:200px;
+	height:25px;
+	}
+
+#subscribebutton{ 
+	border-radius: 10px;
+	margin-left: -82px;}
+
+li{ list-style-type:none;}
+
+.containerfooter{
+	max-width: 1240px;
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: row;
+	align-items:center;}
+
+
+.footerbackground {background: #3d3d3d;
+	margin-top:.5%;
+	color: #FFFFFF;
+	display:flex;
+}
+
+
+.contactus {display: flex; 
+	flex-basis: 50%;
+	align-items:flex-start;
+	flex-direction:column;
+	}
+
+.socialmedialinks {display: flex;
+	flex-basis: 50%;
+	align-items: center ;
+	align-items:flex-end;
+	flex-direction: column;
+	}
+
+
+
+
+
+
+/* adds social images  */
+#facebook::before{
+	font-family: "Font Awesome 5 Brands";
+	content: "\f39e";
+	} 
+
+#twitter::before{
+	font-family: "Font Awesome 5 Brands";
+	content: "\f099";
+	} 
+
+#instagram::before{
+	font-family: "Font Awesome 5 Brands";
+	content: "\f16d";
+	} 	
+#pintrest::before{
+	font-family: "Font Awesome 5 Brands";
+	content: "\f0d2";
+	} 	
+	
+#google::before{
+	font-family: "Font Awesome 5 Brands";
+	content: "\f0d5";
+	} 	
+
+/* structures font  */	
+@font-face {
+    font-family: 'Raleway';
+    src: url('convertedfonts/Raleway-MediumItalic.eot');
+    src: url('convertedfonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('convertedfonts/Raleway-MediumItalic.woff2') format('woff2'),
+        url('convertedfonts/Raleway-MediumItalic.woff') format('woff'),
+        url('convertedfonts/Raleway-MediumItalic.ttf') format('truetype'),
+        url('convertedfonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('convertedfonts/Raleway-Light.eot');
+    src: url('convertedfonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('convertedfonts/Raleway-Light.woff2') format('woff2'),
+        url('convertedfonts/Raleway-Light.woff') format('woff'),
+        url('convertedfonts/Raleway-Light.ttf') format('truetype'),
+        url('convertedfonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('convertedfonts/Raleway-LightItalic.eot');
+    src: url('convertedfonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('convertedfonts/Raleway-LightItalic.woff2') format('woff2'),
+        url('convertedfonts/Raleway-LightItalic.woff') format('woff'),
+        url('convertedfonts/Raleway-LightItalic.ttf') format('truetype'),
+        url('convertedfonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('convertedfonts/Raleway-Medium.eot');
+    src: url('convertedfonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('convertedfonts/Raleway-Medium.woff2') format('woff2'),
+        url('convertedfonts/Raleway-Medium.woff') format('woff'),
+        url('convertedfonts/Raleway-Medium.ttf') format('truetype'),
+        url('convertedfonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('convertedfonts/PlayfairDisplay-Italic.eot');
+    src: url('convertedfonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('convertedfonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('convertedfonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('convertedfonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('convertedfonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('convertedfonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('convertedfonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('convertedfonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('convertedfonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('convertedfonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('convertedfonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('convertedfonts/PlayfairDisplay-Regular.eot');
+    src: url('convertedfonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('convertedfonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('convertedfonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('convertedfonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('convertedfonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('convertedfonts/PlayfairDisplay-Bold.eot');
+    src: url('convertedfonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('convertedfonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('convertedfonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('convertedfonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('convertedfonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
