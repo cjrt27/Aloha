@@ -1,307 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* structures the font  */
-body{
-	font-size: 16px;
-	font-family: "Raleway";
-	font-weight: 300;
-    font-style: normal;
-	text-align: center;
-	margin: 0,0;
-	color: #2d2d2d;
-	} 
-
-	/* sets max width for certain sections  */	
-.container{
-	max-width: 1240px;
-	width: 100%;
-	margin: 0 auto;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.containerheader{
-	max-width: 1240px;
-	width: 100%;
-	height: 90px;
-	margin: 0 auto;
-	display:flex;
-	align-items: center;
-	position:relative;
-	}
+/* Start of CT code */
 
-
-
-#logo {	display: flex; 
-	flex-basis: 25%;
-	align-items:flex-start;	
-	}
-
-#logo img {height: auto; 
-	width: 1%;
-	min-width:200px;}
-	
-	
-#navbar {display: flex;
-	flex-basis: 50%;
-	flex-direction: column;
-	
-	}
-
-#navbar a {color: #e2574c;
-	text-decoration: none;
-}
-
-#navbar ul {color: #e2574c;
-	text-decoration: none;
-	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
-	}
+/* -----------------------------------------------------FONT SETUP START---------------------------------------------------------------- */
 
 	
-#shopping {	height: 40%;
-	width: 40%;
-	background-image: url("images/cart-icon.svg");
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: contain, auto;
-	display: flex;
-	flex-basis: 25%;
-	align-items: flex-end ;
-	flex-direction: column;
-	}
-
-/* font settings for headers */
-h1, h2, h3{font-family: "Playfair Display";
-	font-weight: normal;
-    font-style: normal;;
-}
-
-h1, h2{color:#FFFFFF;}
-
-/* sets different colour (orange) for a couple sections */
-.difcolor{ color: #969696;}
-
-/* sets different colour (grey) for a most loved section */
-#mostloved{color:#e2574c;}
-
-
-/* Structures images for hero */
-
-.hero {
-	height: 400px;
-	width: 100%;
-	background-image: url("images/banner-girl.png"),url("images/flower-bkgd.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain, auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	
-}
-
-/* Structures images mid section mens glasses etc*/
-
-#midsectiontop {display: flex;
-	width: 100%;
-	height: 200px;
-	flex-direction: row;
-	margin: 5px;}
-	
-#midsectiontop ul {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	height: 200px;
-	margin: 5px;}
-
-	
-	
-#midsectionbottom {display: flex;
-	width: 100%;
-	height: 200px;
-	flex-direction: row;
-	margin: 5px;}
-
-
-#midsectionbottom ul {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	height: 200px;
-	margin: 5px;}
-
-	
-#mens{flex-basis: 50%;
-	height: 100%;
-	width: 100%;
-	background-image: url("images/mens-category.jpg");	
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	margin: 5px;}
-
-#trends{
-	flex-basis: 25%;
-	height: 100%;
-	width: 100%;
-	background-image: url("images/trends-category.jpg");	
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	margin: 5px;}
-	
-#glasses{flex-basis: 25%;
-	height: 100%;
-	width: 100%;
-	background-image: url("images/glasses-category.jpg");	
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	margin: 5px;}
-	
-#sale{flex-basis: 25%;
-	height: 100%;
-	width: 100%;
-	background-image: url("images/sale-category.jpg");	
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	margin: 5px;}
-	
-#bags{flex-basis: 25%;
-	height: 100%;
-	width: 100%;
-	background-image: url("images/bags-category.jpg");	
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	margin: 5px;}
-	
-#womens{flex-basis: 50%;
-	height: 100%;
-	width: 100%;
-	background-image: url("images/womens-category.jpg");	
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	margin: 5px;}
-	
-
-	
-
-/* Structures images for bottom secion Wave img */
-
-.bottom {
-	height: 400px;
-	width: 100%;
-	background-image: url("images/wave-bkgd.jpg");	
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	
-}
-
-#emailinput{
-	border-radius: 10px;
-	width:200px;
-	height:25px;
-	}
-
-#subscribebutton{ 
-	border-radius: 10px;
-	margin-left: -82px;}
-
-li{ list-style-type:none;}
-
-.containerfooter{
-	max-width: 1240px;
-	width: 100%;
-	height: 300px;
-	margin: 0 auto;
-	display:flex;
-	flex-direction: row;
-	align-items:center;}
-
-
-.footerbackground {background: #3d3d3d;
-	margin-top:.5%;
-	color: #FFFFFF;
-	display:flex;
-}
-
-
-.contactus {display: flex; 
-	flex-basis: 50%;
-	align-items:flex-start;
-	flex-direction:column;
-	}
-
-.socialmedialinks {display: flex;
-	flex-basis: 50%;
-	align-items: center ;
-	align-items:flex-end;
-	flex-direction: column;
-	}
-
-
-
-
-
-
-/* adds social images  */
-#facebook::before{
-	font-family: "Font Awesome 5 Brands";
-	content: "\f39e";
-	} 
-
-#twitter::before{
-	font-family: "Font Awesome 5 Brands";
-	content: "\f099";
-	} 
-
-#instagram::before{
-	font-family: "Font Awesome 5 Brands";
-	content: "\f16d";
-	} 	
-#pintrest::before{
-	font-family: "Font Awesome 5 Brands";
-	content: "\f0d2";
-	} 	
-	
-#google::before{
-	font-family: "Font Awesome 5 Brands";
-	content: "\f0d5";
-	} 	
-
 /* structures font  */	
 @font-face {
     font-family: 'Raleway';
@@ -398,3 +148,1347 @@ li{ list-style-type:none;}
     font-weight: bold;
     font-style: normal;
 }
+
+/* -----------------------------------------------------FONT SETUP END---------------------------------------------------------------- */
+
+
+/* -----------------------------------------------------GLOBAL START-------------------------------------------------------------------- */
+
+
+
+/* structures the font  */
+body{
+	font-size: 16px;
+	font-family: "Raleway";
+	font-weight: 300;
+    font-style: normal;
+	text-align: center;
+	color: #2d2d2d;
+	} 
+
+	/* sets max width for certain sections  */	
+.container{
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+	}
+
+/* font settings for headers */
+h1, h2, h3{
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: normal;;
+	}
+
+h1, h2{
+	color:#FFFFFF;
+	}
+
+/* sets different colour (orange) for a couple sections */
+.difcolor{ 
+	color: #969696;
+	}
+
+li{ list-style-type:none;}
+
+	
+/* -----------------------------------------------------GLOBAL END-------------------------------------------------------------------- */
+	
+	
+/* -----------------------------------------------------HEADER START-------------------------------------------------------------------- */
+
+
+
+.containerheader{
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	display:flex;
+	align-items: center;
+	overflow: hidden;
+	background-color:#FFFFFF;
+	top: 0;
+	position: fixed;
+}
+
+
+
+#logo {	
+	margin-left: 8%;
+	display: flex; 
+	flex-basis: 25%;
+	align-items:flex-start;	
+	}
+
+#logo img {
+	height: auto; 
+	width: 1%;
+	min-width:100px;
+	}
+	
+	
+#navbar {
+	display: flex;
+	flex-basis: 50%;
+	flex-direction: row;
+	align-items:center;
+	justify-content: space-between; 
+	align-items: center;
+	}
+
+#navbar a {
+	color: #e2574c;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight:bold;
+	}
+
+#navbar ul {
+	color: #e2574c;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;	
+	flex-wrap: no-wrap;
+	height: 30px;
+	align-items:center;
+	}
+
+navbar li {
+	width: 100%; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+
+}
+
+#shopping {	
+	height: 75%;
+	width: 75%;
+	background-image: url("images/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain, auto;
+	display: flex;
+	flex-basis: 25%;
+	align-items: flex-end ;
+	flex-direction: column;
+	margin-right:8%;
+	}
+
+/* -----------------------------------------------------HEADER END-------------------------------------------------------------------- */
+
+	
+/* -----------------------------------------------------HERO START-------------------------------------------------------------------- */
+
+
+/* Structures images for hero */
+
+.hero {
+	height: 400px;
+	width: 100%;
+	background-image: url("images/banner-girl.png"),url("images/flower-bkgd.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 75px, 0px;
+	background-size: contain, auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	line-height:2;
+	
+}
+
+h1 { 
+	font-family: "Playfair Display";
+	font-weight: bold;
+    font-style: normal;
+	font-size: 40px;
+	text-shadow: .5px .5px .5px #969696
+	}
+
+h2 { font-family: "Playfair Display";
+	font-weight: bold;
+    font-style: normal;
+	font-size: 16px;
+	text-shadow: .5px .5px .5px #969696
+	}
+	
+	
+/* -----------------------------------------------------HERO END-------------------------------------------------------------------- */
+
+/* -----------------------------------------------------HAND CRAFTED START-------------------------------------------------------------------- */
+
+
+#handcrafted {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	}
+	
+
+#hctext{
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: normal;
+	max-width:60%;
+	margin-top:2%;
+	line-height:2;
+	margin-left:29%;
+	margin-right:29%;
+	}
+
+h4 {
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: italic;
+	font-size: 40px;
+	}
+
+h4 span {
+	margin-left:.2em;
+	font-weight:bold;
+	font-style: normal;
+	}
+
+/* -----------------------------------------------------HAND CRAFTED END-------------------------------------------------------------------- */
+	
+
+/* -----------------------------------------------------MID SECTION MENS WOMENS ETC IMG START---------------------------------------------------------------- */
+
+
+/* Structures images mid section mens glasses etc*/
+
+#midsectionContainer{ 
+	display:flex;
+	flex-direction: column;
+	box-sizing:border-box;
+	padding-top:1%;
+	padding-bottom:1%;
+	height:400px;
+	width:100%
+	}
+	
+	
+#midsectionContainer ul{ 
+	display:flex;	
+	flex-wrap: wrap;
+	height: 400px;
+
+}	
+#mens{
+	height: 50%;
+	width: 50%; 
+	background-image: url("images/mens-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	border-bottom: 10px solid #ffffff;
+	}
+
+#trends{
+	height: 50%;
+	width: 25%;
+	box-sizing:border-box; 
+	background-image: url("images/trends-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	border-left:.5%;
+	border-color: white;
+	border-right: 10px solid #ffffff;
+	border-left: 10px solid #ffffff;
+	}
+	
+#glasses{
+	height: 50%;
+	width: 25%;
+	box-sizing:border-box; 
+	background-image: url("images/glasses-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	padding-left:.5%;
+	}
+	
+#sale{
+	height: 50%;
+	width: 25%;
+	box-sizing:border-box; 
+	background-image: url("images/sale-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	padding-right:.5%;
+	border-right: 10px solid #ffffff;
+	}
+	
+#bags{
+	height: 50%;
+	width: 25%;
+	box-sizing:border-box; 
+	background-image: url("images/bags-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	padding-right:.5%;
+	}
+	
+#womens{
+	height: 50%;
+	width: 50%;
+	box-sizing:border-box; 
+	overflow: hidden;
+	background-image: url("images/womens-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	border-left: 10px solid #ffffff;
+	}
+
+/* -----------------------------------------------------MID SECTION MENS WOMENS ETC IMG END---------------------------------------------------------------- */
+	
+
+/* -----------------------------------------------------MOST LOVED START---------------------------------------------------------------- */
+
+
+	/* sets different colour (grey) for a most loved section */
+#mostloved ul{
+	color:#e2574c;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	font-weight:bold;
+	}
+
+.category {
+	color:#969696;
+	font-size:12px;
+	font-weight:bold;
+	}
+
+.price {
+	color:#969696;
+	font-size:16px;
+	font-weight:bold;
+	}
+	
+h3 {
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: italic;
+	font-size: 40px;
+	}
+
+h3 span {
+	margin-left:.2em;
+	font-weight:bold;
+	font-style: normal;
+	}
+	
+#mostlovedproducts {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	}
+
+	
+	
+/* -----------------------------------------------------MOST LOVED END---------------------------------------------------------------- */
+
+/* -----------------------------------------------------SIGN UP START---------------------------------------------------------------- */
+
+
+h5 {
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: italic;
+	font-size: 40px;
+	color:#FFFFFF;
+	text-shadow: .5px .5px .5px #969696
+	}
+
+h5 span {
+	margin-left: .03em;
+	font-weight:bold;
+	font-style: normal;
+	color:#FFFFFF;
+	text-shadow: .5px .5px .5px #969696
+	}
+
+#signuptext{
+	color:#FFFFFF;
+	margin-left:28.75%;
+	margin-right:28.75%;
+	line-height:2;
+	}
+	
+
+/* Structures images for bottom secion Wave img */
+
+.bottom {
+	box-sizing:border-box; 
+	height: 300px;
+	width: 100%;
+	background: url("images/wave-bkgd.jpg") center bottom no-repeat;	
+	background-position-y: -550px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	align-content:space-evenly;	
+	}
+
+#emailinput{
+	border-radius: 20px;
+	width:400px;
+	height:35px;
+	border: 0px solid;
+	color:#969696;
+	font-family: "Raleway-Light";
+	}
+
+#subscribebutton{ 
+	border-radius: 20px;
+	margin-left: -90px;
+	background-color: #e2574c;
+	color:#FFFFFF;
+	height: 2em;
+	width: 6em;
+	border: 0px solid;
+	}
+
+/* -----------------------------------------------------SIGN UP END---------------------------------------------------------------- */
+
+/* -----------------------------------------------------FOOTER START---------------------------------------------------------------- */
+	
+
+	
+	
+.footerbackground {
+	background: #282828;
+	margin-top:.5%;
+	color: #FFFFFF;
+	}
+
+.widthcontainer{
+	max-width: 1240px;
+	height: 250px;
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content:center;
+	}
+
+
+.contactus {display: flex; 
+	flex-basis: 50%;
+	align-items:flex-start;
+	flex-direction:column;
+	margin-left: 8%;
+	font-family: "Raleway-Light";
+	height:150px;
+	justify-content: space-between;
+	}
+
+.contactus a{
+	color: #FFFFFF;
+	}	
+
+
+.contactus p{
+	display: flex;
+	align-items:flex-start;
+	flex-direction:column;
+	}	
+	
+.contactusaddress{
+	color:#969696;
+	font-weight: normal;
+	}
+
+	
+.socialmedialinks {
+	display: flex;
+	flex-basis: 50%;
+	align-items: flex-end;
+	flex-direction: column;
+	height:150px;
+	justify-content: space-between;
+	}
+
+.socialmedialinks li{
+	width:130px;
+	text-align:left;
+	}
+
+
+.socialmedialinks li::before{
+	font-family: "Font Awesome 5 Brands";
+	display: inline-block;
+	width: 2em;
+}
+
+/* adds social images  */
+#facebook::before{
+	content: "\f39e";
+	} 
+
+#twitter::before{
+	content: "\f099";
+	} 
+
+#instagram::before{
+	content: "\f16d";
+	} 	
+#pintrest::before{
+	content: "\f0d2";
+	} 	
+	
+#google::before{
+	content: "\f0d5";
+	} 	
+
+/* -----------------------------------------------------FOOTER END---------------------------------------------------------------- */
+
+/* -----------------------------------------------------STARTING TABLET VERSION---------------------------------------------------------------- */
+
+@media all and (min-width: 600px) and (max-width: 1239px){
+
+/* -----------------------------------------------------GLOBAL START-------------------------------------------------------------------- */
+
+	
+/* -----------------------------------------------------GLOBAL END-------------------------------------------------------------------- */
+	
+	
+/* -----------------------------------------------------HEADER START-------------------------------------------------------------------- */
+
+
+
+.containerheader{
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	display:flex;
+	align-items: center;
+	overflow: hidden;
+	background-color:#FFFFFF;
+	top: 0;
+	position: fixed;
+}
+
+
+
+#logo {	
+	margin-left: 8%;
+	display: flex; 
+	flex-basis: 25%;
+	align-items:flex-start;	
+	}
+
+#logo img {
+	height: auto; 
+	width: 1%;
+	min-width:100px;
+	}
+	
+	
+#navbar {
+	display: flex;
+	flex-basis: 50%;
+	flex-direction: row;
+	align-items:center;
+	justify-content: space-between; 
+	align-items: center;
+	}
+
+#navbar a {
+	color: #e2574c;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight:bold;
+	}
+
+#navbar ul {
+	color: #e2574c;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;	
+	flex-wrap: no-wrap;
+	height: 30px;
+	align-items:center;
+	}
+
+navbar li {
+	width: 100%; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+
+}
+
+#shopping {	
+	height: 75%;
+	width: 75%;
+	background-image: url("images/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain, auto;
+	display: flex;
+	flex-basis: 25%;
+	align-items: flex-end ;
+	flex-direction: column;
+	margin-right:8%;
+	}
+
+/* -----------------------------------------------------HEADER END-------------------------------------------------------------------- */
+
+	
+/* -----------------------------------------------------HERO START-------------------------------------------------------------------- */
+
+
+/* Structures images for hero */
+
+.hero {
+	height: 400px;
+	width: 100%;
+	background-image: url("images/banner-girl.png"),url("images/flower-bkgd.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 60px, 0px;
+	background-size: contain, auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	}
+
+
+	
+/* -----------------------------------------------------HERO END-------------------------------------------------------------------- */
+
+/* -----------------------------------------------------HAND CRAFTED START-------------------------------------------------------------------- */
+
+
+	
+
+#hctext{
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: normal;
+	max-width:60%;
+	margin-top:2%;
+	line-height:2;
+	margin-left:20%;
+	margin-right:20%;
+	}
+
+/* -----------------------------------------------------HAND CRAFTED END-------------------------------------------------------------------- */
+	
+
+/* -----------------------------------------------------MID SECTION MENS WOMENS ETC IMG START---------------------------------------------------------------- */
+
+
+
+
+
+/* -----------------------------------------------------MID SECTION MENS WOMENS ETC IMG END---------------------------------------------------------------- */
+	
+
+/* -----------------------------------------------------MOST LOVED START---------------------------------------------------------------- */
+
+
+	/* sets different colour (grey) for a most loved section */
+#mostloved ul{
+	color:#e2574c;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	font-weight:bold;
+	}
+
+.category {
+	color:#969696;
+	font-size:12px;
+	font-weight:bold;
+	}
+
+.price {
+	color:#969696;
+	font-size:16px;
+	font-weight:bold;
+	}
+	
+h3 {
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: italic;
+	font-size: 40px;
+	}
+
+h3 span {
+	margin-left:.2em;
+	font-weight:bold;
+	font-style: normal;
+	}
+	
+#mostlovedproducts {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	}
+
+	
+	
+/* -----------------------------------------------------MOST LOVED END---------------------------------------------------------------- */
+
+/* -----------------------------------------------------SIGN UP START---------------------------------------------------------------- */
+
+
+
+#signuptext{
+	color:#FFFFFF;
+	margin-left:20%;
+	margin-right:20%;
+	line-height:2;
+	}
+	
+
+
+/* -----------------------------------------------------SIGN UP END---------------------------------------------------------------- */
+
+/* -----------------------------------------------------FOOTER START---------------------------------------------------------------- */
+	
+
+.contactus {
+	display: flex; 
+	flex-basis: 50%;
+	align-items:flex-start;
+	flex-direction:column;
+	margin-left: 3%;
+	font-family: "Raleway-Light";
+	height:150px;
+	justify-content: space-between;
+	}
+}
+/* -----------------------------------------------------END OF TABLET VERSION---------------------------------------------------------------- */
+	
+
+/* -----------------------------------------------------START OF MOBILE VERSION---------------------------------------------------------------- */		
+
+
+@media all and (min-width:1px) and (max-width:599px) { 
+
+/* -----------------------------------------------------GLOBAL START-------------------------------------------------------------------- */
+
+/* structures the font  */
+body{
+	font-size: 14px;
+	font-family: "Raleway";
+	font-weight: 300;
+    font-style: normal;
+	text-align: center;
+	color: #2d2d2d;
+	} 
+
+	/* sets max width for certain sections  */	
+.container{
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+	}
+
+/* font settings for headers */
+h1, h2, h3{
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: normal;
+	}
+
+h1, h2{
+	color:#FFFFFF;
+	}
+
+/* sets different colour (orange) for a couple sections */
+.difcolor{ 
+	color: #969696;
+	}
+
+li{
+	list-style-type:none;
+	}
+
+	
+/* -----------------------------------------------------GLOBAL END-------------------------------------------------------------------- */
+	
+	
+/* -----------------------------------------------------HEADER START-------------------------------------------------------------------- */
+
+
+.containerheader{
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;
+	display:flex;
+	align-items: center;
+	overflow: hidden;
+	background-color:#FFFFFF;
+	top: 0;
+	position: fixed;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	
+	}
+
+
+
+#logo {	
+	margin-left: 2%;
+	display: flex; 
+	flex-basis: 25%;
+	align-items:flex-start;	
+	padding-bottom:5px;
+	padding-top:5px;
+	}
+
+#logo img {
+	height: auto; 
+	width: 1%;
+	min-width:100px;
+	}
+	
+	
+	
+#navbar {
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: row;
+	order:1;
+	justify-content:space-between;
+	border-top: 1px solid #D3D3D3;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:3%;
+	margin-right:3%;
+	}
+
+#navbar a {
+	color: #e2574c;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight:bold;
+	}
+
+#navbar ul {
+	color: #e2574c;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin: 15% 10%
+	}
+
+#navbar li{
+	margin-left:3%;
+	margin-right:3%;
+}
+	
+#shopping {	
+	height: 30%;
+	width: 30%;
+	background-image: url("images/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain, auto;
+	display: flex;
+	flex-basis: 25%;
+	align-items: flex-end ;
+	flex-direction: column;
+	margin-right:2%;
+	padding-bottom:5px;
+	padding-top:5px;
+	}
+
+/* -----------------------------------------------------HEADER END-------------------------------------------------------------------- */
+
+	
+/* -----------------------------------------------------HERO START-------------------------------------------------------------------- */
+
+.heroseperator{display:flex;
+	flex-wrap: wrap;
+	flex-direction:column;	}
+
+
+/* Structures images for hero */
+
+.hero {
+	height:400px;
+	width: 100%;
+	background-image: url("images/banner-girl.png"),url("images/flower-bkgd.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-position-y: 75px, 0px;
+	background-size: 200px 350px, cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	line-height:2;
+	margin-top: 80px;
+	}
+
+h1 {
+	font-family: "Playfair Display";
+	font-weight: bold;
+    font-style: normal;
+	font-size: 28px;
+	text-shadow: .5px .5px .5px #969696;
+	margin-left: 15%;
+	margin-right:15%;
+	
+	}
+
+h2 {
+	font-family: "Playfair Display";
+	font-weight: bold;
+    font-style: normal;
+	font-size: 16px;
+	text-shadow: .5px .5px .5px #969696;
+
+	}
+	
+	
+/* -----------------------------------------------------HERO END-------------------------------------------------------------------- */
+
+/* -----------------------------------------------------HAND CRAFTED START-------------------------------------------------------------------- */
+
+
+#handcrafted {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+
+	}
+	
+
+#hctext{
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: normal;
+	max-width:100%;
+	margin-top:2%;
+	line-height:2;
+	margin-left:2%;
+	margin-right:2%;
+
+	}
+
+h4 {
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: italic;
+	font-size: 25px;
+	line-height:2;
+	}
+
+h4 span {
+	margin-left:.2em;
+	font-weight:bold;
+	font-style: normal;
+
+	}
+
+/* -----------------------------------------------------HAND CRAFTED END-------------------------------------------------------------------- */
+	
+
+/* -----------------------------------------------------MID SECTION MENS WOMENS ETC IMG START---------------------------------------------------------------- */
+
+
+/* Structures images mid section mens glasses etc*/
+
+#midsectionContainer{ 
+	display:flex;
+	flex-direction: column;
+	box-sizing:border-box;
+	height:800px;
+	width:100%;
+
+	}
+	
+	
+#midsectionContainer ul{ 
+	display:flex;	
+	flex-wrap: wrap;
+	height: 400px;
+	color: #FFFFFF;
+
+}	
+#mens{
+
+	width: 100%; 
+	background-image: url("images/mens-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	border-bottom: 10px solid #ffffff;
+
+	}
+
+#trends{
+	width: 50%;
+	box-sizing:border-box; 
+	background-image: url("images/trends-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	border-color: white;
+	border-right: 10px solid #ffffff;
+	border-bottom: 10px solid #ffffff;
+	border-left: 0px;
+	}
+	
+#glasses{
+
+	width: 50%;
+	box-sizing:border-box; 
+	background-image: url("images/glasses-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	padding-left:.5%;
+	border-bottom: 10px solid #ffffff
+
+	}
+	
+#sale{
+
+	width: 50%;
+	box-sizing:border-box; 
+	background-image: url("images/sale-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	padding-right:.5%;
+	border-right: 10px solid #ffffff;
+	}
+	
+#bags{
+
+	width: 50%;
+	box-sizing:border-box; 
+	background-image: url("images/bags-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	padding-right:.5%;
+	}
+	
+#womens{
+	width: 100%;
+	box-sizing:border-box; 
+	overflow: hidden;
+	background-image: url("images/womens-category.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	border-top: 10px solid #ffffff;
+	border-left: 0px;
+	}
+
+/* -----------------------------------------------------MID SECTION MENS WOMENS ETC IMG END---------------------------------------------------------------- */
+	
+
+/* -----------------------------------------------------MOST LOVED START---------------------------------------------------------------- */
+
+
+	/* sets different colour (grey) for a most loved section */
+#mostloved ul{
+	color:#e2574c;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	font-weight:bold;
+	}
+
+.category {
+	color:#969696;
+	font-size:12px;
+	font-weight:bold;
+	}
+
+.price {
+	color:#969696;
+	font-size:16px;
+	font-weight:bold;
+	}
+	
+h3 {
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: italic;
+	font-size: 30px;
+	}
+
+h3 span {
+	margin-left:.2em;
+	font-weight:bold;
+	font-style: normal;
+	}
+	
+#mostlovedproducts {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	}
+
+	
+	
+/* -----------------------------------------------------MOST LOVED END---------------------------------------------------------------- */
+
+/* -----------------------------------------------------SIGN UP START---------------------------------------------------------------- */
+
+
+h5 {
+	display: flex;
+	font-family: "Playfair Display";
+	font-weight: normal;
+    font-style: italic;
+	font-size: 30px;
+	color:#FFFFFF;
+	text-shadow: .5px .5px .5px #969696
+	}
+
+h5 span {
+	margin-left: .03em;
+	font-weight:bold;
+	font-style: normal;
+	color:#FFFFFF;
+	text-shadow: .5px .5px .5px #969696}
+
+#signuptext{
+	color:#FFFFFF;
+	margin-left:2%;
+	margin-right:2%;
+	line-height:2;
+	font-size: 12.5px;
+	}
+	
+
+/* Structures images for bottom secion Wave img */
+
+.bottom {
+	box-sizing:border-box; 
+	height: 300px;
+	width: 100%;
+	background: url("images/wave-bkgd.jpg") center bottom no-repeat;	
+	background-position-y: -550px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	align-content:space-evenly;	
+	}
+
+#emailinput{
+	border-radius: 20px;
+	width:275px;
+	height:35px;
+	border: 0px solid;
+	color:#969696;
+	font-family: "Raleway-Light";
+	}
+
+#subscribebutton{ 
+	border-radius: 20px;
+	margin-left: -102px;
+	background-color: #e2574c;
+	color:#FFFFFF;
+	height: 2em;
+	width: 7em;
+	border: 0px solid;
+	}
+
+/* -----------------------------------------------------SIGN UP END---------------------------------------------------------------- */
+
+/* -----------------------------------------------------FOOTER START---------------------------------------------------------------- */
+	
+.footerbackground {
+	background: #282828;
+	margin-top:1%;
+	color: #FFFFFF;
+	}
+
+	
+.widthcontainer{
+	max-width: 1240px;
+	height: 150px;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items:center;
+	justify-content:center;
+	font-size:10px;
+	}
+
+
+.contactus {
+	display: flex; 
+	align-items:Center;
+	flex-direction:column;
+	font-family: "Raleway-Light";
+	height:100px;
+	justify-content: center;
+	justify-content: space-evenly;
+	margin-left: 0%;
+	flex-basis:75%;
+	
+	}
+
+.contactus a{
+	color: #FFFFFF;
+	}	
+
+
+.contactus p{
+	display: flex;
+	align-items:center;
+	flex-direction:column;
+	}	
+
+
+	
+.contactusaddress{
+	color:#969696;
+	font-weight: normal;
+	}
+
+	
+.socialmedialinks {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row;
+	height:0px;
+	justify-content: center;
+	flex-basis:25%;
+	}
+
+	
+.socialmedialinks span {display: none;
+text-size:1px;}
+
+.socialmedialinks li{
+	width:20px;
+	text-align:left;
+	}
+
+
+.socialmedialinks li::before{
+	font-family: "Font Awesome 5 Brands";
+	display: inline-block;
+	width: 2em;
+	}
+
+/* adds social images  */
+#facebook::before{
+	content: "\f39e";
+	} 
+
+#twitter::before{
+	content: "\f099";
+	} 
+
+#instagram::before{
+	clear: "\f16d";
+	} 	
+#pintrest::before{
+	content: "\f0d2";
+	} 	
+	
+#google::before{
+	content: "\f0d5";
+	}
+
+}
+/* -----------------------------------------------------END OF MOBILE VERSION---------------------------------------------------------------- */
+
+
+
