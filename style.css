@@ -209,6 +209,7 @@ li{ list-style-type:none;}
 	background-color:#FFFFFF;
 	top: 0;
 	position: fixed;
+	z-index: 2;
 }
 
 
@@ -276,6 +277,16 @@ navbar li {
 	flex-direction: column;
 	margin-right:8%;
 	}
+
+#itemCount {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  text-align: center;
+}	
 
 /* -----------------------------------------------------HEADER END-------------------------------------------------------------------- */
 
@@ -381,6 +392,7 @@ h4 span {
 	display:flex;	
 	flex-wrap: wrap;
 	height: 400px;
+	color:#FFFFFF;
 
 }	
 #mens{
@@ -484,25 +496,46 @@ h4 span {
 
 
 	/* sets different colour (grey) for a most loved section */
-#mostloved ul{
-	color:#e2574c;
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	font-weight:bold;
-	}
+.mostLovedCarosel{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+
 
 .category {
+	display:flex;
 	color:#969696;
 	font-size:12px;
 	font-weight:bold;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
 	}
 
+.productDescription{display:flex;
+	color:#e2574c;
+	font-weight:bold;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	text-align: center;}
+
 .price {
+	display:flex;
 	color:#969696;
 	font-size:16px;
 	font-weight:bold;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
 	}
 	
 h3 {
@@ -514,21 +547,70 @@ h3 {
 	}
 
 h3 span {
+	display:flex;
 	margin-left:.2em;
 	font-weight:bold;
 	font-style: normal;
 	}
+
+.mostLovedProductsContainer{
+	flex:display;
+	flex-direction: column;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+
+	}
 	
 #mostlovedproducts {
 	height: 200px;
+	width:100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
 	align-content: center;
 	justify-content: center;
+	text-align: center;
 	}
 
-	
+.slide{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	width:100%;
+	line-height:2;
+}
+
+.slide img{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	width:100%;
+	line-height:2;
+}
+
+.addToCart{ 
+	display:flex;
+	border-radius: 20px;
+	background-color: black;
+	color:#FFFFFF;
+	height: 2em;
+	width: 6em;
+	border: 0px solid;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	z-index:1;}
+
+
 	
 /* -----------------------------------------------------MOST LOVED END---------------------------------------------------------------- */
 
@@ -1053,6 +1135,16 @@ li{
 	padding-bottom:5px;
 	padding-top:5px;
 	}
+
+#itemCount {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  text-align: center;
+}
 
 /* -----------------------------------------------------HEADER END-------------------------------------------------------------------- */
 

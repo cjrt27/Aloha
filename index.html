@@ -4,6 +4,8 @@
 		<title> Aloha Apparel Co.</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -11,7 +13,7 @@
 	<div class="heroseperator">
 	<div class="containerheader">
 		<div id="logo">
-			<img src="images\aloha-logo.svg" alt="Aloha Logo">	
+			<img src="images/aloha-logo.svg" alt="Aloha Logo">	
 		</div>
 		<ul id="navbar">
 			<li><a href="#about">ABOUT</a></li>
@@ -20,6 +22,7 @@
 			<li><a href="#updates">UPDATES</a></li>
 		</ul>
 		<div id="shopping">
+		<span id="itemCount"></span>
 		</div>
 	</div>
 	<div class="hero">
@@ -44,23 +47,66 @@
 		</ul>
 		</section>
 		</div>
-		<section class="container">
+		
+		<section class="mostLovedProductsContainer">
+		
 		<div id="mostlovedproducts">
 		<h3>Most-Loved <span>Products</span></h3>
 		</div>
-		<section id="mostloved">
-		<ul>
-		<li><img src="images\checked-stretch-dress.jpg" alt="Checked Stretch Dress"><span class="category">DRESSES</span><br>Checked Stretch Dress<br><span class="price">$129.00</span></li>
-		<li><img src="images\blue-hipster-backpack.jpg" alt="Blue Hipster Backpack"><span class="category">BAGS</span><br>Blue Hipster Backpack<br><span class="price">$69.00</span></li>	
-		<li><img src="images\demin-overall-shorts.jpg" alt="Denim Overall Shorts"><span class="category">DENIM</span><br>Denim Overall Shorts<br><span class="price">$89.00</span></li>
-		<li><img src="images\pink-dotted-dress.jpg" alt="Pink Dotted Dress"><span class="category">DRESSES</span><br>Pink Dotted Dress<br><span class="price">$99.00</span></li>
-		<li><img src="images\stretch-knit-dress.jpg" alt="Stretch Knit Dress"><span class="category">DRESSES</span><br>Stretch Knit Dress<br><span class="price">$169.00</span></li>
-		<li><img src="images\cotton-blue-shirt.jpg" alt="Cotton Blue Shirt"><span class="category">SHIRTS</span><br>Cotton Blue Shirt<br><span class="price">$100.00</span></li>
-		<li><img src="images\blue-silk-dress.jpg" alt="Blue Silk Dress"><span class="category">DRESSES</span><br>Blue Silk Dress<br><span class="price">$100.00</span></li>
-		<li><img src="images\cotton-yellow-tshirt.jpg" alt="Cotton Yellow Shirt"><span class="category">SHIRTS</span><br>Cotton Yellow Shirt<br><span class="price">$100.00</span></li>
-		</ul>
 		</section>
 		</section>
+		<div class="mostLovedCarosel">
+		<div class="slide">
+			<img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
+				<span class="category">DRESSES</span>
+					<span class="productDescription">Checked Stretch Dress</span>
+						<span class="price">$129.00</span>
+							<button class= "addToCart" type="button">Add to Cart</button></div>
+		<div class="slide">
+			<img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
+				<span class="category">BAGS</span>
+					<span class="productDescription">Blue Hipster Backpack</span>
+						<span class="price">$69.00</span>
+							<button class= "addToCart" type="button">Add to Cart</button></div>
+		<div class="slide">
+			<img src="images/demin-overall-shorts.jpg" alt="Denim Overall Shorts">
+				<span class="category">DENIM</span>
+					<span class="productDescription">Denim Overall Shorts</span>
+						<span class="price">$89.00</span>
+							<button class= "addToCart" type="button">Add to Cart</button></div>
+		<div class="slide">
+			<img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
+				<span class="category">DRESSES</span>
+					<span class="productDescription">Pink Dotted Dress</span>
+						<span class="price">$99.00</span>
+							<button class= "addToCart" type="button">Add to Cart</button></div>
+		<div class="slide">
+			<img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
+				<span class="category">DRESSES</span>
+					<span class="productDescription">Stretch Knit Dress</span>
+						<span class="price">$169.00</span>
+							<button class= "addToCart" type="button">Add to Cart</button></div>
+		<div class="slide">
+			<img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
+				<span class="category">SHIRTS</span>
+					<span class="productDescription">Cotton Blue Shirt</span>
+						<span class="price">$100.00</span>
+							<button class= "addToCart" type="button">Add to Cart</button></div>
+		<div class="slide">
+			<img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
+				<span class="category">DRESSES</span>
+					<span class="productDescription">Blue Silk Dress</span>
+						<span class="price">$100.00</span>
+							<button class= "addToCart" type="button">Add to Cart</button></div>
+		<div class="slide">
+		<img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Shirt">
+			<span class="category">SHIRTS</span>
+				<span class="productDescription">Cotton Yellow Shirt</span>
+					<span class="price">$100.00</span>
+						<button class= "addToCart" type="button">Add to Cart</button></div>
+		
+		</div>
+		
 		<section class="bottom">
 		<h5><p>Sign-up for <span>Updates</span></p></h5>
 		<br>
@@ -94,5 +140,11 @@
 						</ul>
 				</div>		
 		</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+		<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+		<script rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+		<script src="index.js"></script>
 	</body>
 </html>
