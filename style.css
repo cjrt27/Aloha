@@ -619,7 +619,15 @@ h3 span {
 	width:30%;
 	margin-left:35%;}
 
-.slick-dots {display:none;}
+#slick-slide-control00 {display:none;}
+#slick-slide-control01 {display:none;}
+#slick-slide-control02 {display:none;}
+#slick-slide-control03 {display:none;}
+#slick-slide-control04 {display:none;}
+#slick-slide-control05 {display:none;}
+#slick-slide-control06 {display:none;}
+#slick-slide-control07 {display:none;}
+
 	
 /* -----------------------------------------------------MOST LOVED END---------------------------------------------------------------- */
 
