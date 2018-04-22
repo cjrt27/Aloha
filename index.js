@@ -1,10 +1,23 @@
 $(function() {
+
+//*---------------------------------------------------------------------Smooth Scrolling Start------------------------------------------*//
+
+
+
+//*---------------------------------------------------------------------Smooth Scrolling End------------------------------------------*//
+
+//*---------------------------------------------------------------------Cart Counter Start------------------------------------------*//
 var itemCount = 0;
 
 $('.addToCart').click(function (){
   itemCount ++;
   $('#itemCount').html(itemCount).css('display', 'block');
 }); 
+
+//*---------------------------------------------------------------------Cart Counter End------------------------------------------*//
+
+//*---------------------------------------------------------------------Carosel Start------------------------------------------*//
+
 
 $(document).ready(function(){
   $('.mostLovedCarosel').slick({
@@ -50,6 +63,40 @@ $(document).ready(function(){
 							});
 })
 
+//*---------------------------------------------------------------------Carosel End------------------------------------------*//
+
+
+//*---------------------------------------------------------------------Email Input Alert Message Start------------------------------------------*//
+
+
+$(document).ready(function(e) {
+$('#subscribebutton').click(function() {
+var sEmail = $('#emailinput').val();
+// Checking Empty Fields
+if ($.trim(sEmail).length == 0) {
+alert('Field is Mandatory');
+e.preventDefault();
+}
+if (validateEmail(sEmail)) {
+alert('Thanks for Subscribing!');
+}
+else {
+alert('Please Enter a Valid Email Address');
+e.preventDefault();
+}
+});
+});
+// Function that validates email address through a regular expression.
+function validateEmail(sEmail) {
+var filter = /^[\w-.+]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
+if (filter.test(sEmail)) {
+return true;
+}
+else {
+return false;
+}
+}
+//*---------------------------------------------------------------------Email Input Alert Message End------------------------------------------*//
 
 
 
