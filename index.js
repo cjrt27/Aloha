@@ -2,35 +2,14 @@ $(function() {
 
 //*---------------------------------------------------------------------Smooth Scrolling Start------------------------------------------*//
 
-$('.handCraftedLink').click( function() {
-     $('html, body').animate({
-          scrollTop: $('#handcrafted').offset().top
-     }, 400);
+$('a').click( function(e) {
+     e.preventDefault()
+	 $('html').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+	 },500);
 });
 
 
-
-$('.midsectionContainerLink').click( function() {
-     $('html, body').animate({
-          scrollTop: $('#midsectionContainer').offset().top
-     }, 400);
-});
-
-
-
-$('.mostlovedproductsLink').click( function() {
-     $('html, body').animate({
-          scrollTop: $('#mostlovedproducts').offset().top
-     }, 400);
-});
-
-
-
-$('.updatesLink').click( function() {
-     $('html, body').animate({
-          scrollTop: $('#updates').offset().top
-     }, 400);
-});
 
 
 
