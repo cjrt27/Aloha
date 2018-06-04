@@ -24,13 +24,12 @@ Some challanges including learning css flexbox and getting the smooth scroll to 
 * JQuery Plugins (Flickity: http://flickity.metafizzy.co/)
 * Smooth Scrolling (https://css-tricks.com/snippets/jquery/smooth-scrolling/)
 
-[create an anchor](#anchors-in-markdown)
 
-#Desktop Screenshot
+# Desktop Screenshot
 ![Desktop Screenshot](https://cjrt27.github.io/Aloha/images/aloha-desktop.png)
 
-#Tablet Screenshot
+# Tablet Screenshot
 ![Tablet Screenshot](https://cjrt27.github.io/Aloha/images/aloha-tablet.png)
 
-#Mobile Screenshot
+# Mobile Screenshot
 ![Mobile Screenshot](https://cjrt27.github.io/Aloha/images/aloha-mobile.png)
