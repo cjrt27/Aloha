@@ -65,3 +65,11 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/macos,linux,windows
+
+# fonts folder
+fonts 
+
+footertest.html
+footertestcss.css
+notes_day2.docx
+project-01.zip
