@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang='en'>
-	<head>
-		<title> Aloha Apparel Co.</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>
+
+<head>
+	<title> Aloha Apparel Co.</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
 	<div class="heroseperator">
-	<div class="containerheader">
-		<div id="logo">
-			<img src="images/aloha-logo.svg" alt="Aloha Logo">	
+		<div class="containerheader">
+			<div id="logo">
+				<img src="images/aloha-logo.svg" alt="Aloha Logo">
+			</div>
+			<ul id="navbar">
+				<li>
+					<a class="handCraftedLink" href="#handcrafted">ABOUT</a>
+				</li>
+				<li>
+					<a class="midsectionContainerLink" href="#midsectionContainer">SHOP</a>
+				</li>
+				<li>
+					<a class="mostlovedproductsLink" href="#mostlovedproducts">FEATURED</a>
+				</li>
+				<li>
+					<a class="updatesLink" href="#updates">UPDATES</a>
+				</li>
+			</ul>
+			<div id="shopping">
+				<span id="itemCount"></span>
+			</div>
 		</div>
-		<ul id="navbar">
-			<li><a class="handCraftedLink" href="#handcrafted">ABOUT</a></li>
-			<li><a class="midsectionContainerLink" href="#midsectionContainer">SHOP</a></li>
-			<li><a class= "mostlovedproductsLink" href="#mostlovedproducts">FEATURED</a></li>
-			<li><a class="updatesLink" href="#updates">UPDATES</a></li>
-		</ul>
-		<div id="shopping">
-		<span id="itemCount"></span>
+		<div class="hero">
+			<br>
+			<h2>NEW COLLECTION</h2>
+			<h1>Spring/Summer 2016</h1>
 		</div>
 	</div>
-	<div class="hero">
-		<br>
-		<h2>NEW COLLECTION</h2>
-		<h1>Spring/Summer 2016</h1>
-	</div>
-	</div>
-		<div id="handcrafted">
-		<h4>Hand-Crafted <span>Styles</span></h4>
-		<div id= "hctext"><p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current slection of products or sign-up for updates below.</p>
+	<div id="handcrafted">
+		<h4>Hand-Crafted
+			<span>Styles</span>
+		</h4>
+		<div id="hctext">
+			<p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current slection of products or sign-up for
+				updates below.</p>
 		</div>
-		</div>
-		<div class="difcolor" id="midsectionContainer">
+	</div>
+	<div class="difcolor" id="midsectionContainer">
 		<ul>
 			<li id="mens">MEN'S</li>
 			<li id="trends">TREDNS</li>
@@ -46,106 +60,138 @@
 			<li id="womens">WOMEN'S</li>
 		</ul>
 		</section>
-		</div>
-		
-		<section class="mostLovedProductsContainer">
-		
+	</div>
+
+	<section class="mostLovedProductsContainer">
+
 		<div id="mostlovedproducts">
-		<h3>Most-Loved <span>Products</span></h3>
+			<h3>Most-Loved
+				<span>Products</span>
+			</h3>
 		</div>
-		</section>
-		</section>
-		<div class="mostLovedCarosel">
+	</section>
+	</section>
+	<div class="mostLovedCarosel">
 		<div class="slide">
 			<img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
-				<span class="category">DRESSES</span>
-					<span class="productDescription">Checked Stretch Dress</span>
-						<span class="price">$129.00</span>
-							<button class= "addToCart" type="button">Add to Cart</button></div>
+			<span class="category">DRESSES</span>
+			<span class="productDescription">Checked Stretch Dress</span>
+			<span class="price">$129.00</span>
+			<button class="addToCart" type="button">Add to Cart</button>
+		</div>
 		<div class="slide">
 			<img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
-				<span class="category">BAGS</span>
-					<span class="productDescription">Blue Hipster Backpack</span>
-						<span class="price">$69.00</span>
-							<button class= "addToCart" type="button">Add to Cart</button></div>
+			<span class="category">BAGS</span>
+			<span class="productDescription">Blue Hipster Backpack</span>
+			<span class="price">$69.00</span>
+			<button class="addToCart" type="button">Add to Cart</button>
+		</div>
 		<div class="slide">
 			<img src="images/demin-overall-shorts.jpg" alt="Denim Overall Shorts">
-				<span class="category">DENIM</span>
-					<span class="productDescription">Denim Overall Shorts</span>
-						<span class="price">$89.00</span>
-							<button class= "addToCart" type="button">Add to Cart</button></div>
+			<span class="category">DENIM</span>
+			<span class="productDescription">Denim Overall Shorts</span>
+			<span class="price">$89.00</span>
+			<button class="addToCart" type="button">Add to Cart</button>
+		</div>
 		<div class="slide">
 			<img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
-				<span class="category">DRESSES</span>
-					<span class="productDescription">Pink Dotted Dress</span>
-						<span class="price">$99.00</span>
-							<button class= "addToCart" type="button">Add to Cart</button></div>
+			<span class="category">DRESSES</span>
+			<span class="productDescription">Pink Dotted Dress</span>
+			<span class="price">$99.00</span>
+			<button class="addToCart" type="button">Add to Cart</button>
+		</div>
 		<div class="slide">
 			<img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
-				<span class="category">DRESSES</span>
-					<span class="productDescription">Stretch Knit Dress</span>
-						<span class="price">$169.00</span>
-							<button class= "addToCart" type="button">Add to Cart</button></div>
+			<span class="category">DRESSES</span>
+			<span class="productDescription">Stretch Knit Dress</span>
+			<span class="price">$169.00</span>
+			<button class="addToCart" type="button">Add to Cart</button>
+		</div>
 		<div class="slide">
 			<img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
-				<span class="category">SHIRTS</span>
-					<span class="productDescription">Cotton Blue Shirt</span>
-						<span class="price">$100.00</span>
-							<button class= "addToCart" type="button">Add to Cart</button></div>
+			<span class="category">SHIRTS</span>
+			<span class="productDescription">Cotton Blue Shirt</span>
+			<span class="price">$100.00</span>
+			<button class="addToCart" type="button">Add to Cart</button>
+		</div>
 		<div class="slide">
 			<img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
-				<span class="category">DRESSES</span>
-					<span class="productDescription">Blue Silk Dress</span>
-						<span class="price">$100.00</span>
-							<button class= "addToCart" type="button">Add to Cart</button></div>
+			<span class="category">DRESSES</span>
+			<span class="productDescription">Blue Silk Dress</span>
+			<span class="price">$100.00</span>
+			<button class="addToCart" type="button">Add to Cart</button>
+		</div>
 		<div class="slide">
-		<img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Shirt">
+			<img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Shirt">
 			<span class="category">SHIRTS</span>
-				<span class="productDescription">Cotton Yellow Shirt</span>
-					<span class="price">$100.00</span>
-						<button class= "addToCart" type="button">Add to Cart</button></div>
-		
+			<span class="productDescription">Cotton Yellow Shirt</span>
+			<span class="price">$100.00</span>
+			<button class="addToCart" type="button">Add to Cart</button>
 		</div>
-		
-		<section class="bottom" id="updates">
-		<h5><p>Sign-up for <span>Updates</span></p></h5>
+
+	</div>
+
+	<section class="bottom" id="updates">
+		<h5>
+			<p>Sign-up for
+				<span>Updates</span>
+			</p>
+		</h5>
 		<br>
-		<div id="signuptext"><p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+		<div id="signuptext">
+			<p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our
+				blog. Unsubscribe at any time.</p>
 		</div>
 		<br>
-		<form id="myform" action="" method="POST">
-			<input id= "emailinput" type="email" name="email" placeholder="Your Email">
-			<button id= "subscribebutton" type="button">Subscribe</button> 
+		<form id="myform" action="" method="POST" novalidate>
+			<input id="emailinput" type="email" name="email" placeholder="Your Email">
+			<button id="subscribebutton" type="submit">Subscribe</button>
 		</form>
-		</section>
-		<footer class="footerbackground">
-				<div class="widthcontainer">
-					<div class="contactus">
-						<div class="contactuscompany">
-							<p>&copy; 2016 Aloha Apparel Co.</p>
-							<p>Powered by HTML and CSS.</p>
-						</div>
-						<div class="contactusphoneemail">
-							<span>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></span>
-						</div>
-						<div class="contactusaddress">
-							<p>1490 W Broadway</p><p>Vancouver, BC, Canada</p>
-						</div>
-					</div>
-						<ul class="socialmedialinks"><li id="facebook"><span>Facebook</span></li>
-						<li id="twitter"><span>Twitter</span></li>
-						<li id="instagram"><span>Instagram</span></li>
-						<li id="pintrest"><span>Pintrest</span></li>
-						<li id="google"><span>Google</span></li>
-						</ul>
-				</div>		
-		</footer>
+	</section>
+	<footer class="footerbackground">
+		<div class="widthcontainer">
+			<div class="contactus">
+				<div class="contactuscompany">
+					<p>&copy; 2016 Aloha Apparel Co.</p>
+					<p>Powered by HTML and CSS.</p>
+				</div>
+				<div class="contactusphoneemail">
+					<span>604-604-6040.
+						<a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a>
+					</span>
+				</div>
+				<div class="contactusaddress">
+					<p>1490 W Broadway</p>
+					<p>Vancouver, BC, Canada</p>
+				</div>
+			</div>
+			<ul class="socialmedialinks">
+				<li id="facebook">
+					<span>Facebook</span>
+				</li>
+				<li id="twitter">
+					<span>Twitter</span>
+				</li>
+				<li id="instagram">
+					<span>Instagram</span>
+				</li>
+				<li id="pintrest">
+					<span>Pintrest</span>
+				</li>
+				<li id="google">
+					<span>Google</span>
+				</li>
+			</ul>
+		</div>
+	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-    crossorigin="anonymous"></script>
-		<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
-		<script src="index.js"></script>
-	</body>
+	 crossorigin="anonymous"></script>
+	<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k="
+	 crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+</body>
+
 </html>
